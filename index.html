@@ -5,14 +5,16 @@
     </head>
     <body>
         <h2>จุดคุ้มทุนของหน่วยขาย</h2>
-        <form>
-            <label for="fc">fixed cost: </label>
-            <input type="text" id="fc" required><br><br>
-            <label for="sp">selling price per unit: </label>
-            <input type="text" id="sp" required><br><br>
-            <label for="vc">variable cost per unit: </label>
-            <input type="text" id="vc" required><br><br>
-            <button onclick="calBEU(document.getElementById('inputValue').value)">Click here</button>
+        <form name="data">
+            <label>fixed cost: </label>
+            <input type="text" name="fc" required><br><br>
+            <label>selling price per unit: </label>
+            <input type="text" name="sp" required><br><br>
+            <label>variable cost per unit: </label>
+            <input type="text" name="vc" required><br><br>
+            <label>Breaking Point</label> 
+            <h1 id="result">xxx</h1>
+            <button onclick="calBEU()">Click here</button>
           </form>
           <script src="app.js"></script>
     </body>
